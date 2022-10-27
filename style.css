@@ -1,0 +1,257 @@
+*{
+    font-family: Verdana, helvetica, sans-serif;
+    margin: 0;    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html
+{
+    overflow-x: hidden;
+}
+a:hover
+{
+    background-color: #333;
+}
+.container header
+{
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+    margin-top: -15vh;
+}
+.container header img
+{
+    margin: 12px 0 0 20px;
+}
+.container header span
+{
+    display: inline-block;
+    margin: 0 0 0 20px;
+    font-size: 60px;
+}
+.container nav
+{
+    color: black;
+    position: fixed;
+    box-sizing: border-box;
+    margin-top: 0;
+    height: 85vh;
+    width: 20vw;
+}
+@keyframes visible{
+    0%{
+        margin-left: -500px;
+        opacity: 0.1;
+    }
+    100%{
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+.container nav a
+{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    display: block;
+    font-size: 30px;
+    width: 280px;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    animation-name: visible;
+    animation-duration: 1.5s;
+}
+
+.container nav a:hover
+{
+    background-color: #333;
+}
+.container main
+{
+    background-color: yellow;
+    color: black;
+    width: 100vw;
+    margin-top: 15vh;
+}
+.container main .profile
+{
+    width: 100vw;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding:50px; */
+    background: #eee;
+    height: 85vh;
+}
+.container main .profile img
+{
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff;
+    text-align: center;
+    height: 75vh;
+}
+.container main #down
+{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+.container main #down h1
+{
+    font-weight: normal;
+    font-size: 60px;
+    margin: -150px 0 40px;
+}
+.container main #down .countdown
+{
+    display: flex;
+    transform: scale(2);
+}
+.container main #down .countdown .time
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+
+}
+.container main #down .countdown .time h2
+{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1;
+    margin: 0 0 5px;
+}
+.container footer
+{
+    background-color: black;
+    width: 100vw;
+}
+
+/* Detail page */
+
+.containers
+{
+    background-color: yellow;
+}
+.containers header
+{
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    height: 15vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 3;
+}
+.containers header img
+{
+    margin: 12px 0 0 20px;
+}
+.containers header span
+{
+    display: inline-block;
+    margin: 0 0 0 20px;
+    font-size: 60px;
+}
+
+.containers nav
+{
+    color: black;
+    position: fixed;
+    box-sizing: border-box;
+    margin-top: 15vh;
+    height: 85vh;
+    width: 20vw;
+}
+.containers nav a
+{
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    display: block;
+    font-size: 30px;
+    width: 280px;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    animation-name: visible;
+    animation-duration: 1.5s;
+}
+.containers nav a:hover
+{
+    background-color: #333;
+}
+.containers main
+{
+    background-color: yellow;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+.containers main .main 
+{
+    background-image:  linear-gradient(rgb(102, 252, 182),rgb(17, 177, 206));
+    width: 55vw;
+    height: 60vh;
+    margin: 28vh 0 0 15vw;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px #333;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.containers main #back
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/back.png);
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    margin: -20px 0 0 0;
+}
+.containers main .main h3
+{
+    font-size: 3em;
+    margin-top: 30px;
+}
+.containers footer
+{
+    background-color: black;
+    color: #fff;
+    width: 100vw;
+    margin-top: 20vh;
+    text-align: center;
+}
+.containers footer table
+{
+    width: 100%;
+}
+.containers footer table tr td h2
+{
+    font-size: 2em;
+    font-weight: lighter;
+}
+.containers footer table tr td h3
+{
+    font-size: 1.5em;
+    font-weight: lighter;
+}
